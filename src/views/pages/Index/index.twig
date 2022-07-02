@@ -1,0 +1,14 @@
+{% extends 'layouts/common.twig' %}
+
+{% 
+	$url = "http://sample.com/jsondata.json";
+	$json = file_get_contents($url);
+	set foo = json_decode($json,true).foo['src/entries/credit/index.tsx'].file
+%}
+{% block content %}
+	{{foo}}
+{% endblock %}
+
+{% block head %}
+	<script type="module" src="a"></script>
+{% endblock %}
