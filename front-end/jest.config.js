@@ -1,10 +1,9 @@
 module.exports = {
-  roots: ['<rootDir>/src'],
-  testMatch: [
-    '**/__tests__/**/*.+(ts|tsx|js)',
-    '**/?(*.)+(spec|test).+(ts|tsx|js)',
-  ],
-  transform: {
-    '^.+\\.(ts|tsx)$': 'ts-jest',
-  },
+  preset: 'ts-jest',
+  //Jestがテストファイルを検出するために使用するグロブパターン
+  testMatch: ['<rootDir>/src/**/*/*.test.ts?(x)'],
+  // if using TypeScript with a baseUrl set to the root directory then you need the below for alias' to work
+  moduleDirectories: ['node_modules', '<rootDir>/'],
+  //テストする環境のこと
+  testEnvironment: 'node',
 }

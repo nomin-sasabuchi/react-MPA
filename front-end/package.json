@@ -6,6 +6,7 @@
     "build": "tsc && vite build",
     "sb": "start-storybook -p 6006",
     "test": "jest",
+    "generate:component": "hygen new component",
     "build-storybook": "build-storybook",
     "cypress:open": "cypress open",
     "lint:fix": "eslint --fix",
@@ -24,6 +25,7 @@
     ]
   },
   "dependencies": {
+    "cypress": "^10.3.0",
     "glob": "^8.0.3",
     "path": "^0.12.7",
     "react": "^18.0.0",
@@ -43,6 +45,7 @@
     "@testing-library/dom": "^8.14.0",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^14.2.1",
+    "@types/jest": "27.5.2",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^5.30.3",
@@ -50,12 +53,13 @@
     "@vitejs/plugin-react": "^1.3.0",
     "autoprefixer": "^10.4.7",
     "babel-loader": "^8.2.5",
-    "cypress": "^10.2.0",
     "eslint": "^8.19.0",
     "eslint-plugin-react": "^7.30.1",
     "eslint-plugin-storybook": "^0.5.13",
     "husky": "^8.0.1",
-    "jest": "^28.1.1",
+    "hygen": "^6.2.7",
+    "jest": "27.5.1",
+    "jest-environment-jsdom": "^28.1.2",
     "lint-staged": "^13.0.3",
     "postcss": "^8.4.14",
     "postcss-import": "^14.1.0",
@@ -65,7 +69,7 @@
     "postcss-preset-env": "^7.7.2",
     "postcss-simple-vars": "^6.0.3",
     "tailwindcss": "^3.1.4",
-    "ts-jest": "^28.0.5",
+    "ts-jest": "27.1.5",
     "typescript": "^4.6.3",
     "vite": "^2.9.9"
   }

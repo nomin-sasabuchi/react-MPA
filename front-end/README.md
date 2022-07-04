@@ -1,19 +1,4 @@
-
-
-土曜
-eslintの設定
-huskyの設定
-- test(eslint,stylelint,jest)
-
 月曜まで
-ciの設定
-- autoアサイン
-- クロマティック
-- test(eslint,stylelint,jest)
-- issueテンプレート
-- PRテンプレート
-
-火曜
 - hygenの設定
   - components
     - storybook
@@ -24,9 +9,17 @@ ciの設定
     - index.ts
     - rooting
 
+火曜
+ciの設定
+- autoアサイン
+- クロマティック
+- test(eslint,stylelint,jest)
+- issueテンプレート
+- PRテンプレート
+
 水曜
 tailwind設定
-vsocdeの設定
+
 
 時間があったら
 - sentryの設定

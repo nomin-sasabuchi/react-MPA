@@ -1,5 +1,5 @@
-describe('test', () => {
-  it('should ', () => {
-    console.log('test')
-  })
+import { sumNumber } from '../index'
+
+test('sumNumber test, 1 + 2 to equail 3', () => {
+  expect(sumNumber(1, 2)).toBe(3)
 })
