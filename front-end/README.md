@@ -1,29 +1,3 @@
-月曜まで
-- hygenの設定
-  - components
-    - storybook
-    - hooks
-    - jsx
-    - test
-  - entry
-    - index.ts
-    - rooting
-
-火曜
-ciの設定
-- autoアサイン
-- クロマティック
-- test(eslint,stylelint,jest)
-- issueテンプレート
-- PRテンプレート
-
-水曜
-tailwind設定
-
-
-時間があったら
-- sentryの設定
-
 # ガイドライン
 
 ## ドキュメント
