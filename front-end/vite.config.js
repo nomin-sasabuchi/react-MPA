@@ -1,30 +1,30 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import path from "path";
-import glob from "glob";
+import path from 'path'
+import glob from 'glob'
 
-const entries = {};
-const srcDir = "./src/entries/";
-const distDir = `./dist/`;
+const entries = {}
+const srcDir = './entries/'
+const distDir = `./dist/`
 
-const srcFileKeys = glob.sync("**/index.+(js|ts|tsx)", { cwd: srcDir });
+const srcFileKeys = glob.sync('**/index.+(js|ts|tsx)', { cwd: srcDir })
 srcFileKeys.map((key) => {
-  const srcFilepath = path.join(srcDir, key);
-  entries[key] = srcFilepath;
-});
+  const srcFilepath = path.join(srcDir, key)
+  entries[key] = srcFilepath
+})
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  build:{
+  build: {
     manifest: true,
-    rollupOptions:{
+    rollupOptions: {
       input: entries,
     },
     outDir: distDir,
-    assetsDir: ''
+    assetsDir: '',
   },
   resolve: {
-    alias: [{ find: '@', replacement: '/src' }]
-  }
+    alias: [{ find: '@', replacement: '/src' }],
+  },
 })

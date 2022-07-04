@@ -1,14 +1,36 @@
 
-木曜まで
-jestの設定
-cypressの設定
-react-routerの設定
 
-金曜
-ciの設定
-huskyの設定
+土曜
 eslintの設定
+huskyの設定
+- test(eslint,stylelint,jest)
+
+月曜まで
+ciの設定
+- autoアサイン
+- クロマティック
+- test(eslint,stylelint,jest)
+- issueテンプレート
+- PRテンプレート
+
+火曜
+- hygenの設定
+  - components
+    - storybook
+    - hooks
+    - jsx
+    - test
+  - entry
+    - index.ts
+    - rooting
+
+水曜
+tailwind設定
 vsocdeの設定
+
+時間があったら
+- sentryの設定
+
 # ガイドライン
 
 ## ドキュメント
